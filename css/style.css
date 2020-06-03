@@ -461,7 +461,7 @@ body {
 /* Intro styles start */
 
 .intro {
-    height: 100vh;
+    min-height: 100vh;
     background: url(../img/intro-bg.jpg) no-repeat center;
     background-size: cover;
     padding-top: 263px;
@@ -491,12 +491,37 @@ body {
 }
 
 .search-form_field {
-    background: transparent url("../img/svg/oval.svg") no-repeat left center;
+    width: 297px;
+    background: transparent url("../img/svg/oval.svg") no-repeat left 6px;
     background-size: 20px;
     border: 0;
     border-bottom: 2px solid #BFC0C5;
     margin-right: 60px;
+    padding-left: 43px;
+    padding-bottom: 22px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
 }
 
+.search-form_field::placeholder {
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.search-form_submit {
+    padding: 15px 39px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+    background: #1B7DFF;
+    border: 0;
+}
+
+.search-form_submit:hover, .search-form_submit:focus, .search-form_submit:active {
+    background: #0e66da;
+}
 
 /* Intro styles end */
